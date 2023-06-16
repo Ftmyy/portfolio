@@ -1,0 +1,269 @@
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+
+li, a, button {
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color:  #4a4665;
+    z-index: 80%;
+    padding: 1px 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    box-shadow: 0 3px 6px 0 #393742;
+}
+
+h1 {
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.nav_links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links li{
+    display:inline-block;
+    padding: 0 70px;
+}
+
+.nav_links li a:hover {
+    color: rgb(122, 114, 158);
+}
+
+
+button {
+    margin-left: 5px;
+    padding: 9px 25px;
+    background-color:  #4f4966;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgb(108, 100, 149);
+}
+
+div {
+    color: rgb(255, 255, 255);
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#home {
+    padding-top: 8%;
+    padding-bottom: 13%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 100px;
+    font-family:'Inconsolata', monospace;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#pers {
+    padding-top:9%;
+    font-size: xx-large;
+}
+
+#comm {
+    padding-top:5%;
+    font-size: xx-large;
+}
+
+.image-with-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-with-description img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    background-color:  rgba(106, 100, 149, 0.218);
+  }
+  
+  .image-with-description .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8482a080;
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #me {
+    padding-top: 8%;
+    padding-bottom: 15%;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  
+  #me p {
+    flex: 1;
+    margin-right: 30px;
+  }
+
+footer {
+    text-align: center;
+    background-color:  #3e3e5b;
+    font-family: 'Inconsolata', monospace;
+    padding: 1px;
+    box-shadow: 0 3px 6px 0 #393742;
+}
+
+footer .w3-large {
+    font-size: 16px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-with-description {
+    position: relative;
+    margin-right: 30px; 
+    text-align:center;
+  }
+  
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(41, 36, 63, 0.7);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+
+  
+  img {
+    width: 450px; 
+    height: 325px;
+    padding: 0%;
+    padding-top: 1%;
+    border-radius: 15px;
+  }
+
+
+
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+.prev {
+    left: 0;
+    transform: translate(-100%, -50%);
+  }
+  
+  .next {
+    right: 0;
+    transform: translate(100%, -50%);
+  }
+  
+  /* Number text (1/6 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #b8b4d6;
+    border-radius: 40%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #4b5b81;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px}
+  }
+
+ 
